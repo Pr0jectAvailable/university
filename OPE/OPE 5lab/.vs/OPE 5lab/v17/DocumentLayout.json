@@ -1,0 +1,41 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "E:\\Projects\\university\\OPE\\OPE 5lab\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{355138E2-BEBC-4877-AC09-DEAEEA052787}|OPE 5lab\\OPE 5lab.vcxproj|E:\\Projects\\university\\OPE\\OPE 5lab\\OPE 5lab\\OPE 5lab.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{355138E2-BEBC-4877-AC09-DEAEEA052787}|OPE 5lab\\OPE 5lab.vcxproj|solutionrelative:OPE 5lab\\OPE 5lab.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 1,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:2:0:{dcc4ea97-1c0c-482b-b205-e541c0df9728}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "OPE 5lab.cpp",
+              "DocumentMoniker": "E:\\Projects\\university\\OPE\\OPE 5lab\\OPE 5lab\\OPE 5lab.cpp",
+              "RelativeDocumentMoniker": "OPE 5lab\\OPE 5lab.cpp",
+              "ToolTip": "E:\\Projects\\university\\OPE\\OPE 5lab\\OPE 5lab\\OPE 5lab.cpp",
+              "RelativeToolTip": "OPE 5lab\\OPE 5lab.cpp",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2025-10-07T15:09:31.255Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
