@@ -1,0 +1,67 @@
+body{
+    background-image: url("./images/it_bstu.jpg");
+    background-repeat: no-repeat;
+    background-size: 200px 200px;
+    background-position: right top;
+    background-attachment: fixed;
+}
+
+h1{
+    text-align: center;
+}
+
+span{
+    color: hotpink; 
+    font-size:x-large; 
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+table, td, th{
+    border: 1px solid black;
+}
+
+li{
+    list-style: none;
+    background-image: url("./images/Susremaster.webp");
+    background-size: 16px 16px;
+    background-position: -1px 1px;
+    padding-left: 18px;
+    background-repeat: no-repeat;
+}
+
+a{
+    color: rgb(21, 122, 88); 
+    font-size:x-large
+}
+
+p{
+    margin: 0;
+    text-indent: 40px;
+}
+
+.bottom_link{
+    display: inline-block;
+    margin-top: 50px;
+    color: red;
+    text-decoration: underline dashed;
+}
+
+.block img[src*="imis"]{
+    width: 700px;
+    float: left;
+    margin-right: 20px;
+}
+
+.block img[src*="121-RS"]{
+    width: 700px;
+    float: right;
+    margin-left: 20px;
+}
+
+.block > div {
+    height: 430px;
+}
+
+.block{
+    width: 99%;
+}

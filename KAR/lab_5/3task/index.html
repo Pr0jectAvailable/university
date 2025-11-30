@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Не шахматы</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <form action="none">
+        <h3>Регистрация постоянного клиента</h2>
+        <label for="surname">Фамилия:</label>
+        <input type="text" name="surname" id="surname">
+        <label for="name">Имя:</label>
+        <input type="text" name="name" id="name">
+        <label for="patronymic">Отчество:</label>
+        <input type="text" name="patronymic" id="patronymic">
+        <label for="age">Ваш возраст:</label>
+        <input type="text" name="age" id="age">
+
+        <span>Пол:</span>
+        <label for="gender1"><input type="checkbox" id="gender1" name="gender" value="male"> Мужской</label>
+        <label for="gender2"><input type="checkbox" id="gender2" name="gender" value="female"> Женский</label>
+
+        <label for="email">Email:</label>
+        <input type="email" name="email" id="email">
+        <label for="country">Страна проживания:</label>
+        <input type="text" name="country" id="country">
+
+        <label for="discover">Откуда вы узнали о нас:</label>
+        <select name="discover" id="discover">
+            <option value="none_c">Выберите вариант</option>
+            <option value="friends">От друзей</option>
+            <option value="youtube">Youtube</option>
+            <option value="soc_net">Социальные сети</option>
+            <option value="search">По поиску</option>
+        </select>
+
+        <label for="date">Дата заполнения</label>
+        <input type="date" name="date" id="date">
+        <input type="button" value="Регистрация">
+        <input type="button" value="Отмена">
+
+
+    </form>
+</body>
+</html>

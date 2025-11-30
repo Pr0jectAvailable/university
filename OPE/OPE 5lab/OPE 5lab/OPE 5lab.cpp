@@ -1,20 +1,100 @@
-﻿// OPE 5lab.cpp : Этот файл содержит функцию "main". Здесь начинается и заканчивается выполнение программы.
-//
-
+﻿
 #include <iostream>
+#include <locale>
+#include <iomanip>
+#include <windows.h>
+#include <cctype>
 
-int main()
-{
-    std::cout << "Hello World!\n";
+using namespace std;
+
+void asciiMode() {
+    char upper, lower;
+    cout << "\nЗаглавная латинская буква: ";
+    cin >> upper;
+    cout << "\nСтрочная латинская буква: ";
+    cin >> lower;
+
+    if (!isupper(upper) || !islower(lower) || upper < 'A' || upper > 'Z' || lower < 'a') {
+        cout << "\nВведены не латинские буквы!";
+        return;
+    }
+
+    cout << "\nКод заглавной: " << (int)upper;
+    cout << "\nКод строчной: " << (int)lower;
+    cout << "\nРазница: " << abs(upper - lower);
 }
 
-// Запуск программы: CTRL+F5 или меню "Отладка" > "Запуск без отладки"
-// Отладка программы: F5 или меню "Отладка" > "Запустить отладку"
+void win1251Mode() {
 
-// Советы по началу работы 
-//   1. В окне обозревателя решений можно добавлять файлы и управлять ими.
-//   2. В окне Team Explorer можно подключиться к системе управления версиями.
-//   3. В окне "Выходные данные" можно просматривать выходные данные сборки и другие сообщения.
-//   4. В окне "Список ошибок" можно просматривать ошибки.
-//   5. Последовательно выберите пункты меню "Проект" > "Добавить новый элемент", чтобы создать файлы кода, или "Проект" > "Добавить существующий элемент", чтобы добавить в проект существующие файлы кода.
-//   6. Чтобы снова открыть этот проект позже, выберите пункты меню "Файл" > "Открыть" > "Проект" и выберите SLN-файл.
+    char upper, lower;
+    cout << "\nЗаглавная русская буква: ";
+    cin >> upper;
+    cout << "\nСтрочная русская буква: ";
+    cin >> lower;
+
+    if ((int)(unsigned char)upper < 192 || (int)(unsigned char)upper > 223 || (int)(unsigned char)lower < 224 || (int)(unsigned char)lower > 255) {
+        cout << "\nВведены не русские буквы!";
+        return;
+    }
+
+    cout << "\nКод заглавной: " << (int)(unsigned char)upper;
+    cout << "\nКод строчной: " << (int)(unsigned char)lower;
+    cout << "\nРазница: " << abs((int)(unsigned char)upper - (int)(unsigned char)lower);
+    
+}
+
+void digitMode() {
+    char digit;
+    cout << "\nВведите цифру: ";
+    cin >> digit;
+
+    if (!isdigit(digit)) {
+        cout << "\nВведена не цифра!";
+        return;
+    }
+
+    cout << "\nКод цифры: " << (int)digit;
+}
+
+int main() {
+    SetConsoleCP(1251);
+    SetConsoleOutputCP(1251);
+    setlocale(LC_ALL, "Russian");
+
+    bool cycle = true;
+    int choice;
+    while (cycle) {
+        cout << "\n\nВыберите вариант:\n";
+        cout << "ASCII - 1\n";
+        cout << "Windows-1251 - 2\n";
+        cout << "Цифра - 3\n";
+        cout << "Выход - 4\n";
+        cout << "Ввод: ";
+        cin >> choice;
+
+        switch (choice) {
+        case(1): {
+            asciiMode();
+            break;
+        }
+        case(2): {
+            win1251Mode();
+            break;
+        }
+        case(3): {
+            digitMode();
+            break;
+        }
+        case(4): {
+            cout << "\nBye bye";
+            cycle = false;
+            break;
+        }
+        default:{
+            cout << "\nВыбирай из предложенных";
+            break;
+        }
+        }
+    }
+    return 0;
+}

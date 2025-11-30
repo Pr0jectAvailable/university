@@ -1,0 +1,67 @@
+
+table{
+    border-collapse: collapse;
+    border-spacing: none;
+}
+
+tr{
+    height: 90px;
+}
+
+td{
+    text-align: center;
+    font-size: 1.2em;
+    height: 90px;
+    width: 90px;
+    border: 2px solid black;
+}
+
+tr:nth-child(odd) td:nth-child(even),
+tr:nth-child(even) td:nth-child(odd) {
+    background-color: black;
+}
+
+tr:first-child td:nth-child(even),
+tr:first-child td:nth-child(odd),
+tr:last-child td:nth-child(even),
+tr:last-child td:nth-child(odd) {
+    background-color: grey;
+}
+
+tr:nth-child(even) td:first-child,
+tr:nth-child(odd) td:first-child,
+tr:nth-child(even) td:last-child,
+tr:nth-child(odd) td:last-child {
+    background-color: grey;
+}
+
+tr:first-child td, tr:last-child td{
+    height: 30px;
+}
+
+tr td:first-child, tr td:last-child{
+    width: 30px;
+}
+
+tr:first-child, tr:last-child{
+    height: 30px;
+}
+
+tr:first-child td:first-child, /* углы */
+tr:first-child td:last-child,
+tr:last-child td:first-child, 
+tr:last-child td:last-child{
+    background-color: white;
+    border: none;
+}
+
+/* низя -n */
+/* tr:nth-child(n+2):nth-child(-n+9):nth-child(even) td:nth-child(n+2):nth-child(-n+9):nth-child(odd),
+tr:nth-child(n+2):nth-child(-n+9):nth-child(odd) td:nth-child(n+2):nth-child(-n+9):nth-child(even) {
+    background-color: black;
+} */
+
+/* tr:nth-child(2n+3) td:nth-child(even):not(:last-child), tr:nth-child(2n+2):not(:last-child) td:nth-child(odd):not(:first-child){
+    background-color: black;
+}
+ */

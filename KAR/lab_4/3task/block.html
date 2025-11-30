@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <style>
+                #p_f{
+                        border: solid;
+                        border-left-color: brown;
+                        border-bottom-color: yellow;
+                        border-right-color: blue;
+                        border-top-color: orange;
+                }
+
+                #p_s{
+                        border-left: solid #007BA7;
+                        border-right: solid #007BA7;
+                }
+
+                #p_t{
+                        border: dashed blue;
+                        border-top: solid rgb(229, 43, 80);
+                }
+
+                #p_fo{
+                        border: 1px dotted orange;
+                }
+
+                #p_th{
+                        border-top: 2px solid darkblue;
+                        border-bottom: 2px solid darkblue;
+                        border-left: 2px dashed maroon;
+                        border-right: 2px dashed maroon;
+                }
+
+                #p_si{
+                        border: double #B3446C;
+                }
+
+                #p_se{
+                        border-top: 1px dashed #808000;
+                        border-bottom: 3px solid #FF7518;
+                }
+
+                #p_e{
+                        border-left: double #CC7722;
+                        border-bottom: double #CC7722;
+                }
+
+                #p_n{
+                        border-right: ridge #B5A642;
+                        border-top: ridge #B5A642;
+                }
+
+                #p_te{
+                        border: 5px dotted rgb(0, 40, 0);
+                        border-top: none;
+                }
+
+                .par div{
+                        display: inline-block;
+                        width: 200px;
+                        height: 200px;
+                        border: 8px solid black;
+                        box-sizing: border-box;
+
+                        text-align: center;
+                        font-size: 45px;
+                }
+
+                .par > div + div{
+                        width: 184.11px;
+                        height: 184.11px;
+                        box-sizing: content-box;
+                }
+        </style>
+</head>
+<body> 
+        <p id="p_f">Cплошная граница коричневого цвета слева, внизу желтая, справа темно-синяя, вверху оранжевая.</p>
+        <p id="p_s">Слева и справа сплошная линия #007BA7</p>
+        <p id="p_t">Сплошную граница (229 43 80) сверху, и пунктирную границу голубого цвета слева, справа и снизу.</p>
+        <p id="p_fo">Точечная граница оранжевого цвета 1 пиксель</p>
+        <p id="p_th">Граница темно-синего цвета толщиной 2 пикселя сверху и снизу и пунктирную границу  бордового цвета слева и справа</p>
+        <p id="p_si">Двойная сплошная граница #B3446C цвета</p> 
+        <p id="p_se">Пунктирную границу #808000 цвета и толщиной 1 пиксель сверху и сплошную границу #FF7518 цвета толщиной 3 пикселя снизу.</p>
+        <p id="p_e">Двойная сплошная граница #CC7722 цвета слева и внизу</p>
+        <p id="p_n">Граница гребень #B5A642 цвета справа и сверху</p>
+        <p id="p_te">Точечная граница слева, справа, снизу толщиной 5px и (0 40 0) цвета</p>
+        <div class="par">
+                <div><p>1</p></div>
+                <div><p>2</p></div>
+        </div>
+</body>
+</html>
+        

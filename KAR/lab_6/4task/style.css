@@ -1,0 +1,33 @@
+div{
+    display: inline-block;
+    width: 250px;
+    height: 250px;
+    border: 3px solid black;
+}
+
+.gradient_1{
+    background-image: linear-gradient(blue, red);
+}
+
+.gradient_2{
+    background-image: repeating-linear-gradient(45deg, red 0 15px, blue 15px 30px);
+}
+
+.gradient_3{
+    background-image: radial-gradient(yellow, green);
+}
+
+.gradient_4{
+    background-image: repeating-radial-gradient(green 0 15px, yellow 15px 30px);
+}
+
+.gradient_5{
+   background-image: 
+    radial-gradient(circle at center, yellow, green 54%, transparent 100%),
+    linear-gradient(45deg, rgb(252, 0, 223) 30%, transparent 40%),
+    linear-gradient(-45deg, rgb(252, 0, 223) 30%, transparent 40%),
+    linear-gradient(135deg, blue 30%, transparent 40%),
+    linear-gradient(-135deg, blue 30%, transparent 40%);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
