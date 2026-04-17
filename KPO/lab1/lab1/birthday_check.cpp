@@ -1,0 +1,35 @@
+#include "stdafx.h"
+#include "birthdayCheck.h"
+
+void birthday_check(int* birthday, int* date) {
+    int count = day_count(birthday);
+    /*for (int i = 0; i < birthday[1] - 1; i++) {
+        if (birthday[1] == 2) {
+            if (leap_year(birthday)) {
+                count += 29;
+            }
+            else {
+                count += 28;
+            }
+        }
+        else if (birthday[1] % 2 == 0) {
+            count += 30;
+        }
+        else {
+            count += 31;
+        }
+    }
+    count += birthday[0];*/
+
+    int today = day_count(date);
+
+    if (today == count) {
+        std::cout << "С днём рождения!\n";
+    }
+    else if (today < count) {
+        std::cout << "Осталось " << count - today << " дней до дня рождения\n";
+    }
+    else if (today > count) {
+        std::cout << "Прошло " << today - count << " дней с дня рождения\n";
+    }
+}

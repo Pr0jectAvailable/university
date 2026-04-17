@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="check.xsl"?>
+<attestation>
+    <student>
+        <id>1</id>
+        <name>Сергеева Мария Алексеевна</name>
+        <subject>
+            <name>Компьютерная графика</name>
+            <score>2</score>
+        </subject>
+        <subject>
+            <name>Алгоритмы и программирование</name>
+            <score>8</score>
+        </subject>
+        <subject>
+            <name>Операционные системы</name>
+            <score>7</score>
+        </subject>
+        <subject>
+            <name>Математика</name>
+            <score>5</score>
+        </subject>
+    </student>
+    <student>
+        <id>2</id>
+        <name>Чернов Ярослав Даниэльевич</name>
+        <subject>
+            <name>Компьютерная графика</name>
+            <score>5</score>
+        </subject>
+        <subject>
+            <name>Алгоритмы и программирование</name>
+            <score>6</score>
+        </subject>
+        <subject>
+            <name>Операционные системы</name>
+            <score>6</score>
+        </subject>
+        <subject>
+            <name>Математика</name>
+            <score>5</score>
+        </subject>
+    </student>
+    <student>
+        <id>3</id>
+        <name>Яковлев Тимофей Артёмович</name>
+        <subject>
+            <name>Компьютерная графика</name>
+            <score>8</score>
+        </subject>
+        <subject>
+            <name>Алгоритмы и программирование</name>
+            <score>9</score>
+        </subject>
+        <subject>
+            <name>Операционные системы</name>
+            <score>9</score>
+        </subject>
+        <subject>
+            <name>Математика</name>
+            <score>7</score>
+        </subject>
+    </student>
+    <student>
+        <id>4</id>
+        <name>Журавлева Алиса Фёдоровна</name>
+        <subject>
+            <name>Компьютерная графика</name>
+            <score>3</score>
+        </subject>
+        <subject>
+            <name>Алгоритмы и программирование</name>
+            <score>6</score>
+        </subject>
+        <subject>
+            <name>Операционные системы</name>
+            <score>8</score>
+        </subject>
+        <subject>
+            <name>Математика</name>
+            <score>4</score>
+        </subject>
+    </student>
+</attestation>

@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="590" height="120" viewBox="0 0 500 120">
+    <a href="https://example.com/link1" target="_blank">
+        <circle cx="55" cy="60" r="45" fill="white" stroke="black" stroke-width="7"/>
+        <text x="55" y="65" text-anchor="middle" font-family="Arial, sans-serif" font-size="16" fill="black">
+            Текст 1
+        </text>
+    </a>
+
+    <a href="https://example.com/link2" target="_blank">
+        <circle cx="200" cy="60" r="45" fill="white" stroke="black" stroke-width="7"/>
+        <text x="200" y="65" text-anchor="middle" font-family="Arial, sans-serif" font-size="16" fill="black">
+            Текст 2
+        </text>
+    </a>
+
+    <a href="https://example.com/link3" target="_blank">
+        <circle cx="345" cy="60" r="45" fill="white" stroke="black" stroke-width="7"/>
+        <text x="345" y="65" text-anchor="middle" font-family="Arial, sans-serif" font-size="16" fill="black">
+            Текст 3
+        </text>
+    </a>
+
+    <a href="https://example.com/link4" target="_blank">
+        <circle cx="485" cy="60" r="45" fill="white" stroke="black" stroke-width="7"/>
+        <text x="485" y="65" text-anchor="middle" font-family="Arial, sans-serif" font-size="16" fill="black">
+            Текст 4
+        </text>
+    </a>
+</svg>

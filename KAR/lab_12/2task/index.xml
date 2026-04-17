@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="../1task/style.css" type="text/css"?>
+<!DOCTYPE shop [
+    <!ELEMENT shop (name, storage)>
+    <!ELEMENT name (#PCDATA)>
+    <!ELEMENT storage (item+)>
+    <!ELEMENT item (title, hr, description, advantages, price)>
+    <!ELEMENT title (#PCDATA)>
+    <!ELEMENT hr EMPTY>
+    <!ELEMENT description (#PCDATA)>
+    <!ELEMENT advantages (#PCDATA)>
+    <!ELEMENT price (#PCDATA)>
+
+    <!ENTITY shopName "Кухня">
+    <!ENTITY gram "граммах">
+    <!ENTITY ml "миллилитрах">
+    <!ENTITY deg "°C">
+]>
+<shop>
+    <name>&shopName;</name>
+    <storage>
+        <item>
+            <title>Кухонные весы</title>
+            <hr></hr>
+            <description>
+                Точные электронные весы с функцией измерения в &gram;, &ml;, унциях и фунтах. Имеют тару (чашу) и режим Тара для взвешивания ингредиентов в собственную посуду. Небольшие, стильные, работают от батареек.
+            </description>
+            <advantages>
+                Незаменимы для точного следования рецептам, выпечки, контроля порций и диет.
+            </advantages>
+            <price>
+                12$
+            </price>
+        </item>
+        <item>
+            <title>Магнитный держатель</title>
+            <hr></hr>
+            <description>
+                Стильная деревянная или металлическая планка с мощными неодимовыми магнитами, которая крепится на стену. Позволяет безопасно и компактно хранить ножи лезвиями вверх, всегда под рукой.
+            </description>
+            <advantages>
+                Экономит место в ящике, продлевает срок службы лезвий, делает кухню современной и функциональной.
+            </advantages>
+            <price>
+                10$
+            </price>
+        </item>
+        <item>
+            <title>Силиконовый коврик</title>
+            <hr></hr>
+            <description>
+                Прочный нетоксичный коврик из пищевого силикона, заменяющий одноразовый бумажный пергамент. Подходит для выпечки, раскатки теста, работы с конфетами. Легко моется.
+            </description>
+            <advantages>
+                Многоразовое использование, экономия денег, противень остается чистым, идеально ровное печенье.
+            </advantages>
+            <price>
+                30$
+            </price>
+        </item>
+        <item>
+            <title>Мерный стакан</title>
+            <hr></hr>
+            <description>
+                Удобный прозрачный стакан из пластика или стекла с нанесёнными на стенки метриками для измерения сыпучих и жидких продуктов (мл, граммы для сахара, муки, воды и т.д.).
+            </description>
+            <advantages>
+                Замена нескольким измерительным ёмкостям, быстро и удобно отмерять ингредиенты, не пачкая лишней посуды.
+            </advantages>
+            <price>
+                3$
+            </price>
+        </item>
+        <item>
+            <title>Электрический чайник</title>
+            <hr></hr>
+            <description>
+                Современный чайник с функцией установки точной температуры нагрева воды (от 40&deg; до 100&deg;). Идеален для заваривания разных видов чая, кофе или приготовления детского питания.
+            </description>
+            <advantages>
+                Максимальный контроль над процессом заваривания, сохранение полезных свойств напитков, функция поддержания температуры.
+            </advantages>
+            <price>
+                300$
+            </price>
+        </item>
+    </storage>
+</shop>

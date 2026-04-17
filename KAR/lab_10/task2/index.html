@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" media="(min-width: 1280px)" href="./css2.css">
+</head>
+<body>
+    <div class="container">
+        <header class="top-p">
+            <h1>Flexbox-верстка</h1>
+        </header>
+        <div  class="bottom-p">
+            <div class="box-video">
+                <video src="./source/FLEXBOX. Учимся верстать на флексах. Флексбокс уроки. Часть первая - свойства flex-контейнера [EO8hH_2OwCU].mp4" controls></video>
+                <video src="./source/FLEXBOX. Учимся верстать на флексах. Флексбокс уроки. Часть вторая - свойства flex-элементов [uPYUgipiFcM].mp4" controls></video>
+                <video src="./source/FLEXBOX. Учимся верстать на флексах. Флексбокс уроки. Часть третья - свойство flex-direction [cXAUxbu6X2E].mp4" controls></video>
+            </div>
+            <div class="box-text">
+                CSS Flexbox (от слова Flexible Box, что переводится как «гибкий контейнер») – это мощный инструмент для создания адаптивной и гибкой верстки веб-страниц. В отличие от традиционных способов позиционирования элементов, таких как float или inline-block, Flexbox предоставляет разработчику простые и интуитивные средства для управления выравниванием, распределением пространства и порядком элементов внутри контейнера.
+                Одной из ключевых особенностей Flexbox является его способность автоматически подстраиваться под доступное пространство, обеспечивая удобное создание адаптивных интерфейсов. Это делает его особенно полезным для современных веб-приложений, где важно корректное отображение элементов на экранах разных размеров
+                Основные преимущества Flexbox:
+                Простое выравнивание элементов: Flexbox упрощает процесс центрирования, выравнивания и распределения элементов как по горизонтали, так и по вертикали.
+                Адаптивность: элементы автоматически подстраиваются под размеры контейнера, что позволяет легко реализовывать сложные макеты без необходимости задавать точные размеры для каждого элемента.
+                Удобство управления пространством: Flexbox позволяет равномерно распределять свободное место или сжимать элементы, чтобы они помещались в ограниченном пространстве.
+                Поддержка большинства браузеров: Flexbox стабильно работает практически во всех современных браузерах, включая мобильные версии.
+                Перед тем как приступить к использованию Flexbox, важно разобраться в его базовых концепциях и терминологии. Эти понятия лежат в основе работы с этой технологией и помогают эффективно создавать гибкие и адаптивные макеты.
+                Контейнер и элементы. Flexbox основан на двух основных сущностях:
+                Flex-контейнер (flex-container) – это элемент, к которому применяется свойство display: flex или display: inline-flex. После применения одного из этих свойств к элементу, он становится «гибким контейнером» и получает возможность управлять расположением и поведением своих дочерних элементов.
+                Flex-элементы (flex-items) – это прямые дочерние элементы flex-контейнера. Только они подчиняются правилам Flexbox. Элементы, находящиеся глубже (вложенные), не затрагиваются, если не задать flex-контейнер для них отдельно.
+
+            </div>
+            <div class="box-audio">
+                <audio src="./source/chair (1).mp3" controls></audio>
+                <audio src="./source/chair (2).mp3" controls></audio>
+                <audio src="./source/chair (3).mp3" controls></audio>
+            </div>
+        </div>
+        <div class="gallery">
+            <div>
+                <figure>
+                <img src="./source/img (1).webp" alt="image">
+                <figcaption>Райан Рейнольдс</figcaption>
+            </figure>
+            </div>
+            <div>
+                <figure>
+                <img src="./source/img (2).webp" alt="image">
+                <figcaption>Джастис Смит</figcaption>
+            </figure>
+            </div>
+            <div>
+                <figure>
+                <img src="./source/img (3).webp" alt="image">
+                <figcaption>Кэтрин Ньютон</figcaption>
+            </figure>
+            </div>
+            <div>
+                <figure>
+                <img src="./source/img (4).webp" alt="image">
+                <figcaption>Билл Найи</figcaption>
+            </figure>
+            </div>
+            <div><figure>
+                <img src="./source/img (5).webp" alt="image">
+                <figcaption>Рита Ора</figcaption>
+            </figure></div>
+            <div><figure>
+                <img src="./source/img (6).webp" alt="image">
+                <figcaption>Сьюки Уотерхаус</figcaption>
+            </figure></div>
+            <div><figure>
+                <img src="./source/img (7).webp" alt="image">
+                <figcaption>Дипло</figcaption>
+            </figure></div>
+            <div><figure>
+                <img src="./source/img (8).webp" alt="image">
+                <figcaption>Симон Эшли</figcaption>
+            </figure>
+        </div>
+        </div>
+    </div>
+</body>
+</html>

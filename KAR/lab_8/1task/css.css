@@ -1,0 +1,54 @@
+body{
+    padding-left: 400px;
+}
+
+.css_info{
+    display: inline-block;
+    width: 600px;
+    height: 450px;
+
+    padding: 0 20px 0 15px;
+}
+
+.vertical_menu{
+    display: inline-block;
+    height: 450px;
+    width: 300px;
+
+    vertical-align: top;
+}
+
+.vertical_menu ul{
+    list-style: none;
+    margin: 0;
+}
+
+.vertical_menu ul li{
+    margin-bottom: 10px;
+}
+
+.vertical_menu ul li a{
+    display: inline-block;
+    height: 100px;
+    width: 180px;
+
+    text-align: center;
+    line-height: 90px;
+    font-size: larger;
+}
+
+#link_1 a:link{
+    color: red;
+}
+
+#link_2 a:visited{
+    color: #8B0000;
+}
+
+#link_3 a:hover{
+    color: green;
+}
+
+#link_4 a:active{
+    color: rgb(184, 134, 11);
+}

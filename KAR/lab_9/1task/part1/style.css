@@ -1,0 +1,22 @@
+h1{
+    writing-mode: vertical-lr;
+    text-orientation: upright;
+    letter-spacing: 2px;
+}
+
+.grid-container{
+    height: 98vh;
+
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns: 1fr 5fr 5fr;
+}
+
+.item{
+   /*  height: ; */
+    border: 2px solid black;
+
+    font-size: x-large;
+    padding: 20px;
+    text-align: center;
+}

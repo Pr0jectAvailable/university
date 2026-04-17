@@ -1,0 +1,4 @@
+﻿  2tasj=k.cpp
+E:\Projects\university\AASD\lab4\2tasj=k\2tasj=k.cpp(9,15): warning C4244: аргумент: преобразование "time_t" в "unsigned int", возможна потеря данных
+E:\Projects\university\AASD\lab4\2tasj=k\2tasj=k.cpp(15,16): warning C4244: инициализация: преобразование "double" в "int", возможна потеря данных
+  2tasj=k.vcxproj -> E:\Projects\university\AASD\lab4\x64\Debug\2tasj=k.exe

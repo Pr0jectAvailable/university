@@ -1,0 +1,49 @@
+nav{
+    vertical-align: top;
+}
+
+a{
+    display: inline-block;
+    width: 200px;
+    height: 40px;
+    vertical-align: top;
+
+    color: black;
+    text-decoration: none;
+    line-height: 40px;
+    text-align: center;
+    border: 2px solid black;
+}
+
+ul{
+    display: inline-block;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+ul li{
+    display: none;
+}
+
+ul:hover a{
+    background-position-y: -40px;
+}
+
+ul:hover li{
+    display: list-item;
+}
+
+#pem:hover{
+    background-position-y: -80px;
+}
+
+#htet:hover{
+    background-position-y: -120px;
+}
+
+a[id]{
+    background-image: url(./facultet.png);
+    background-repeat: no-repeat;
+    background-size: 40px;
+}

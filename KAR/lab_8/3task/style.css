@@ -1,0 +1,45 @@
+nav{
+    width: 300px;
+    height: 60px;
+    background-color: yellow;
+    border: 1px solid black;
+    line-height: 60px;
+
+    font-size: x-large;
+    padding-left: 15px;
+}
+
+ul{
+    position: relative;
+    top: -16px;
+    left: -16px;
+    padding: 0;
+    list-style: none;
+    font-size: smaller;
+
+    display: none;
+}
+
+li{
+    width: 180px;
+    height: 40px;
+    margin-top: -4px;
+    
+    line-height: 35px;
+    padding-left: 15px;
+    background-color: orange;
+    border: 2px dashed black;
+}
+
+a{
+    display: inline-block;
+    width: 180px;
+    height: 40px;
+
+    color: black;
+    text-decoration: none;
+}
+
+nav:hover ul{
+    display: block;
+}

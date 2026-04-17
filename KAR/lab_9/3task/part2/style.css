@@ -1,0 +1,53 @@
+body div header{
+    padding-top: 30px;
+    padding-left: 15px;
+    font-size: xxx-large;
+}
+
+aside{
+    padding: 10px;
+    font-size: larger;
+}
+
+main{
+    padding: 10px;
+    font-size: larger;
+}
+
+footer{
+    padding: 10px 0 0 10px;
+    font-size: x-large;
+}
+
+nav ul{
+    font-size: x-large;
+    /* list-style-type: disc; */
+    /* padding: 5px; */
+}
+
+nav ul li{
+    margin-top: 20px;
+}
+
+nav ul li a{
+    color: black;
+    text-decoration: none;
+}
+
+.grid-container{
+    display: grid;
+    height: 98vh;
+
+    grid-template-columns: 1fr 5fr 3fr;
+    grid-template-rows: 1fr 5fr 1fr;
+    grid-gap: 10px;
+    grid-template-areas: 
+    "h h h"
+    "n d a"
+    "f f f";
+}
+
+.item{
+    border: 1px solid black;
+    /* padding: 10px; */
+}

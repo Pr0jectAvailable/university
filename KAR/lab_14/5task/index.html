@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animated SVG Figures</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <div class="figures">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200">
+            <circle cx="100" cy="100" r="70" fill="blue" stroke="black" stroke-width="0">
+                <animate attributeName="stroke-width" 
+                        values="0;5;0" 
+                        dur="2s" 
+                        begin="mouseover" 
+                        end="mouseout" 
+                        fill="remove"
+                        repeatCount="indefinite" />
+            </circle>
+        </svg>
+
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200">
+            <rect y="50" width="200" height="120" fill="red"/>
+            
+            <rect y="50" width="200" height="120" fill="none" stroke="#FFD700" stroke-width="8" 
+                stroke-dasharray="640" stroke-dashoffset="640">
+                <animate attributeName="stroke-dashoffset" 
+                        from="640" 
+                        to="0" 
+                        dur="3s" 
+                        begin="0s" 
+                        fill="remove"
+                        repeatCount="indefinite" />
+            </rect>
+        </svg>
+
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200">
+            <ellipse cx="100" cy="100" rx="100" ry="60" fill="green">
+                <animate attributeName="fill" 
+                         values="green;#FF9800;green" 
+                         dur="3s" 
+                         begin="click" 
+                         fill="freeze"
+                         repeatCount="1" />
+            </ellipse>
+        </svg>
+
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200">
+            <polygon points="100 30 180 160 20 160" fill="green">
+                <animate attributeName="fill" 
+                    values="green;orange;green" 
+                    dur="1s" 
+                    repeatCount="indefinite" />
+            </polygon>
+        </svg>
+    </div>
+</body>
+</html>

@@ -1,0 +1,23 @@
+.emblem{
+    padding-top: 10px;
+}
+
+.nav-menu{
+    list-style-type: none;
+    padding-top: 10px;
+}
+
+.nav-menu li{
+    display: inline-grid;
+}
+
+.nav-menu li a{
+    width: 150px;
+    height: 80px;
+    display: inline-block;
+
+    /* border: 2px solid black; */
+    font-size: x-large;
+    text-decoration: none;
+    text-align: center;
+}

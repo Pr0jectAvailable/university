@@ -1,0 +1,79 @@
+$primary-color: blue;
+$secondary-color: rgb(21, 122, 88);
+$highlight-color: red;
+$border-color: black;
+
+@font-face {
+    font-family: "Monotype_Corsiva";
+    src: url("./Monotype-Corsiva-Regular.ttf") format("truetype");
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
+
+.p_in {
+    color: $primary-color;
+    font-size: 16pt;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.a_sec {
+    color: $secondary-color;
+    font-size: x-large;
+}
+
+h1, h2, h3 {
+    color: purple;
+    font-family: Monotype_Corsiva;
+    
+    &.main_title {
+        text-align: center;
+    }
+}
+
+.sp_style {
+    color: $highlight-color;
+    font-size: large;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+li {
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.p1 {
+    li {
+        font-size: 18pt;
+        color: red;
+        list-style-type: disc;
+    }
+}
+
+.p2 {
+    li {
+        font-size: 20pt;
+        color: yellow;
+        list-style-type: square;
+    }
+}
+
+.p3 {
+    li {
+        font-size: 22pt;
+        color: green;
+        list-style-type: circle;
+    }
+}
+
+.tab_1 {
+    border: solid $border-color 3px;
+    border-collapse: collapse;
+
+    tr, td {
+        border: solid 2px pink;
+    }
+
+    td {
+        color: burlywood;
+    }
+}

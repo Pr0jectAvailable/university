@@ -1,0 +1,25 @@
+.container{
+    display: flex;
+    width: 900px;
+
+    flex-wrap: wrap;
+}
+
+.figures{
+    display: flex;
+    width: 100%;
+
+    justify-content: space-around;
+}
+
+.figures svg{
+    width: 200px;
+    height: 200px;
+}
+
+.line{
+    width: 800px;
+    height: 100px;
+
+    margin-left: 40px;
+}

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="image div-img"></div>
+    <img class="image" src="./source/flowers (1).webp" alt="flowers">
+    <img class="image" src="./source/flowers (2).jpg" alt="flowers">
+
+    <script>
+        let el = document.getElementsByClassName("image");
+        /* let state = false; */
+
+        el[0].addEventListener("mouseenter", () => {
+            let p = document.createElement("p");
+            p.className = "p_img";
+            p.textContent = "Цветы... Эти чудесные создания природы всегда вызывали у человека восхищение и удивление. Они являются ярким свидетельством бесконечной красоты и разнообразия нашего мира. Всякий раз, когда мы видим цветущие растения, наш мир становится ярче и радостнее.";
+            
+            el[0].appendChild(p);
+            
+            el[0].addEventListener("mouseleave", () => {
+                el[0].removeChild(p);
+            });
+        });
+
+        el[1].addEventListener("click", ()=>{
+            if(el[1].style.border != "10px solid red"){
+                el[1].style.border = "10px solid red";
+                /* state = true; */
+            }
+            else{
+                el[1].style.border = "none";
+                /* state = false; */
+            }
+        })
+
+        el[2].addEventListener("mouseenter", () => {
+            el[2].src = "./source/flowers (1).webp";
+            
+            el[2].addEventListener("mouseleave", () => {
+                el[2].src = "./source/flowers (2).jpg";
+            });
+        });
+    </script>
+</body>
+</html>

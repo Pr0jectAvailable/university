@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <form id="studentForm">
+        <h2>Данные студента</h2>
+        
+        <div class="form-row">
+            <label class="label" for="firstName"><span class="star-required">*</span> Имя студента</label>
+            <div class="field">
+                <input type="text" name="firstName" id="firstName" required>
+            </div>
+        </div>
+        
+        <div class="form-row">
+            <label class="label" for="middleName">Отчество студента</label>
+            <div class="field">
+                <input type="text" name="middleName" id="middleName">
+            </div>
+        </div>
+        
+        <div class="form-row">
+            <label class="label" for="lastName"><span class="star-required">*</span> Фамилия студента</label>
+            <div class="field">
+                <input type="text" name="lastName" id="lastName" required>
+            </div>
+        </div>
+        
+        <div class="form-row">
+            <label class="label" for="email">Адрес почты</label>
+            <div class="field">
+                <input type="email" name="email" id="email">
+            </div>
+        </div>
+        
+        <div class="form-row">
+            <label class="label" for="phone"><span class="star-required">*</span> Контактный номер</label>
+            <div class="field">
+                <input type="tel" name="phone" id="phone" required>
+            </div>
+        </div>
+        
+        <div class="form-row">
+            <label class="label" for="faculty">Факультет</label>
+            <div class="field">
+                <select name="faculty" id="faculty">
+                    <option value="">Выберите факультет</option>
+                    <option value="ФИТ">Факультет информационных технологий</option>
+                    <option value="ФЭ">Факультет экономики</option>
+                    <option value="ФМ">Факультет менеджмента</option>
+                    <option value="ФП">Факультет права</option>
+                </select>
+            </div>
+        </div>
+        
+        <div class="form-row">
+            <label class="label" for="course">Курс</label>
+            <div class="field">
+                <select name="course" id="course">
+                    <option value="">Выберите курс</option>
+                    <option value="1">1 курс</option>
+                    <option value="2">2 курс</option>
+                    <option value="3">3 курс</option>
+                    <option value="4">4 курс</option>
+                </select>
+            </div>
+        </div>
+        
+        <div class="form-row">
+            <label class="label" for="group">Группа</label>
+            <div class="field">
+                <select name="group" id="group">
+                    <option value="">Выберите группу</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                    <option value="7">7</option>
+                    <option value="8">8</option>
+                </select>
+            </div>
+        </div>
+        
+        <div class="form-row">
+            <label class="label">Какую социальную сеть вы используете</label>
+            <div class="field">
+                <div class="checkbox-group">
+                    <div class="checkbox-item">
+                        <input type="checkbox" name="social" value="VK">
+                        VK
+                    </div>
+                    <div class="checkbox-item">
+                        <input type="checkbox" name="social" value="Facebook">
+                        Facebook
+                    </div>
+                    <div class="checkbox-item">
+                        <input type="checkbox" name="social" value="Instagram">
+                        Instagram
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <input type="button" value="Отправить" id="submitBtn">
+    </form>
+    
+    <footer id="output"></footer>
+    <script>
+        document.getElementById('submitBtn').onclick = function() {
+            const form = document.getElementById('studentForm');
+            const output = document.getElementById('output');
+
+            if(form.checkValidity()){
+                let result = 'Данные студента:\n';
+                result += 'Имя: ' + form.firstName.value + '\n';
+                result += 'Отчество: ' + form.middleName.value + '\n';
+                result += 'Фамилия: ' + form.lastName.value + '\n';
+                result += 'Email: ' + form.email.value + '\n';
+                result += 'Телефон: ' + form.phone.value + '\n';
+                result += 'Факультет: ' + form.faculty.value + '\n';
+                result += 'Курс: ' + form.course.value + '\n';
+                result += 'Группа: ' + form.group.value + '\n';
+                
+                let arr = [];
+                const sCheckboxes = form.querySelectorAll('input[name="social"]:checked');
+
+                for (let i = 0; i < sCheckboxes.length; i++) {
+                    arr.push(sCheckboxes[i].value);
+                }
+                
+                result += 'Соцсети: ' + (arr.length > 0 ? arr.join(', ') : 'не выбраны');
+                output.textContent = result;
+            }  
+            else{
+                output.textContent = "Введите данные";
+            }
+        };
+    </script>
+</body>
+</html>

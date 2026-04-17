@@ -7,6 +7,6 @@
 #include <limits>
 #include <algorithm>
 
-void asciiMode();
-void win1251Mode();
-void digitMode();
+void a_procedure();
+void cyr_procedure();
+void num_procedure();
